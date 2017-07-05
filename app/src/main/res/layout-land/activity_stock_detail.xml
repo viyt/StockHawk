@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginTop="0dp"
+        android:layout_weight="1"
+        android:background="@color/material_gray_800" />
+
+    <RadioGroup
+        android:id="@+id/period_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/material_gray_800"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_1m"
+            style="@style/StockPeriodButton"
+            android:contentDescription="@string/description_chart_data_1_month"
+            android:text="@string/radio_1m" />
+
+        <RadioButton
+            android:id="@+id/radio_6m"
+            style="@style/StockPeriodButton"
+            android:contentDescription="@string/description_chart_data_6_month"
+            android:text="@string/radio_6m" />
+
+        <RadioButton
+            android:id="@+id/radio_1y"
+            style="@style/StockPeriodButton"
+            android:contentDescription="@string/description_chart_data_1_year"
+            android:text="@string/radio_1y" />
+
+        <RadioButton
+            android:id="@+id/radio_5y"
+            style="@style/StockPeriodButton"
+            android:contentDescription="@string/description_chart_data_5_year"
+            android:text="@string/radio_5y" />
+
+        <RadioButton
+            android:id="@+id/radio_max"
+            style="@style/StockPeriodButton"
+            android:contentDescription="@string/description_chart_data_max"
+            android:text="@string/radio_max" />
+
+    </RadioGroup>
+
+    <android.support.v4.widget.Space
+        android:id="@+id/space_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/single_line_snack_size"
+        android:visibility="gone" />
+</LinearLayout>

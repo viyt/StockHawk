@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#616161</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="material_blue_500">#2196F3</color>
+    <color name="material_pink_300">#F06292</color>
+    <color name="material_teal_500">#009688</color>
+    <color name="material_gray_800">#424242</color>
+    <color name="material_gray_500">#9E9E9E</color>
+    <color name="material_pink_a100">#FF80AB</color>
+    <color name="material_green_a200">#69F0AE</color>
+</resources>

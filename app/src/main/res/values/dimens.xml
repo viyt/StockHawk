@@ -1,0 +1,28 @@
+<resources>
+    <!--General-->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="content_vertical_margin">8dp</dimen>
+    <dimen name="content_horizontal_margin">8dp</dimen>
+
+    <!--MainActivity-->
+    <dimen name="floating_elevation">6dp</dimen>
+    <dimen name="translation_z">12dp</dimen>
+
+    <!--DetailActivity-->
+    <dimen name="text_size_symbol">28sp</dimen>
+    <dimen name="text_padding">16dp</dimen>
+    <dimen name="single_line_snack_size">48dp</dimen>
+    <dimen name="text_size_header1">48sp</dimen>
+    <dimen name="separate_line_thickness">1dp</dimen>
+    <dimen name="item_vertical_margin">4dp</dimen>
+    <dimen name="text_size_header2">16sp</dimen>
+    <dimen name="text_size_content">12sp</dimen>
+    <dimen name="item_view_margin">12dp</dimen>
+    <dimen name="horizontal_item_margin">3dp</dimen>
+    <dimen name="custom_button_min_height">36dp</dimen>
+
+    <!--Widget-->
+    <dimen name="widget_margin">8dp</dimen>
+
+</resources>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/root_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:textSize="@dimen/text_size_symbol"
+            tools:text="GOOG" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/separate_line_thickness"
+            android:layout_marginBottom="@dimen/content_vertical_margin"
+            android:layout_marginTop="@dimen/content_vertical_margin"
+            android:background="@color/material_gray_500" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_header1"
+            tools:text="$ 830.76" />
+
+        <TextView
+            android:id="@+id/title_prev_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="@string/current_price"
+            android:textSize="@dimen/text_size_header2" />
+
+        <TextView
+            android:id="@+id/current_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginBottom="@dimen/item_vertical_margin"
+            android:layout_marginTop="@dimen/item_vertical_margin"
+            tools:text="+0.90(+0.11 %)" />
+
+        <TextView
+            android:id="@+id/date_last_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:textSize="@dimen/text_size_content"
+            tools:text="23 Feb 4:00 PM GMT -01:00" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/content_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@color/material_gray_800"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:minHeight="280dp" />
+
+        <RadioGroup
+            android:id="@+id/period_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/content_vertical_margin"
+            android:layout_marginTop="@dimen/content_vertical_margin"
+            android:background="@color/material_gray_800"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_1m"
+                style="@style/StockPeriodButton"
+                android:contentDescription="@string/description_chart_data_1_month"
+                android:text="@string/radio_1m" />
+
+            <RadioButton
+                android:id="@+id/radio_6m"
+                style="@style/StockPeriodButton"
+                android:contentDescription="@string/description_chart_data_6_month"
+                android:text="@string/radio_6m" />
+
+            <RadioButton
+                android:id="@+id/radio_1y"
+                style="@style/StockPeriodButton"
+                android:contentDescription="@string/description_chart_data_1_year"
+                android:text="@string/radio_1y" />
+
+            <RadioButton
+                android:id="@+id/radio_5y"
+                style="@style/StockPeriodButton"
+                android:contentDescription="@string/description_chart_data_5_year"
+                android:text="@string/radio_5y" />
+
+            <RadioButton
+                android:id="@+id/radio_max"
+                style="@style/StockPeriodButton"
+                android:contentDescription="@string/description_chart_data_max"
+                android:text="@string/radio_max" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/separate_line_thickness"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/content_vertical_margin"
+            android:background="@color/material_gray_500" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/content_vertical_margin"
+            android:text="@string/label_key_statistics"
+            android:textSize="@dimen/text_size_header2" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:background="@color/material_gray_800"
+            android:columnCount="4"
+            android:columnOrderPreserved="true"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/content_horizontal_margin"
+            android:paddingStart="@dimen/content_horizontal_margin"
+            android:rowCount="2"
+            android:rowOrderPreserved="true">
+
+            <TextView
+                style="@style/TextItemGridLayout"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:text="@string/label_quote_prev_close" />
+
+            <TextView
+                android:id="@+id/quote_prev_close"
+                style="@style/TextItemGridLayout"
+                android:layout_column="1"
+                android:layout_row="0"
+                tools:text="838.68" />
+
+            <TextView
+                style="@style/TextItemGridLayout"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:text="@string/label_quote_open" />
+
+            <TextView
+                android:id="@+id/quote_open"
+                style="@style/TextItemGridLayout"
+                android:layout_column="3"
+                android:layout_row="0"
+                tools:text="843.15" />
+
+            <TextView
+                style="@style/TextItemGridLayout"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:text="@string/label_quote_low" />
+
+            <TextView
+                android:id="@+id/quote_low"
+                style="@style/TextItemGridLayout"
+                android:layout_column="1"
+                android:layout_row="1"
+                tools:text="839.65" />
+
+            <TextView
+                style="@style/TextItemGridLayout"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:text="@string/label_quote_high" />
+
+            <TextView
+                android:id="@+id/quote_high"
+                style="@style/TextItemGridLayout"
+                android:layout_column="3"
+                android:layout_row="1"
+                tools:text="844.99" />
+        </GridLayout>
+
+        <android.support.v4.widget.Space
+            android:id="@+id/space_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/single_line_snack_size"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>

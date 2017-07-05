@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name" translatable="false">Stock Hawk</string>
+
+    <!--Preference-->
+    <string name="pref_stocks_initialized_key" translatable="false">initialized</string>
+    <string name="pref_stocks_key" translatable="false">stocks</string>
+    <string name="pref_display_mode_key" translatable="false">displayMode</string>
+    <string name="pref_display_mode_default" translatable="false">@string/pref_display_mode_percentage_key</string>
+    <string name="pref_display_mode_absolute_key" translatable="false">absolute</string>
+    <string name="pref_display_mode_percentage_key" translatable="false">percentage</string>
+
+    <!--Default items-->
+    <string name="default_stocks_yahoo" translatable="false">YHOO</string>
+    <string name="default_stocks_apple" translatable="false">AAPL</string>
+    <string name="default_stocks_microsoft" translatable="false">MSFT</string>
+    <string name="default_stocks_facebook" translatable="false">FB</string>
+
+    <!--Actions-->
+    <string name="action_change_units" translatable="false">@string/pref_display_mode_key</string>
+    <string name="action_setting">Setting</string>
+
+    <!--Labels-->
+    <string name="dialog_title">Add Stock</string>
+    <string name="dialog_hint">Symbol (e.g. GOOG)</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_add">Add</string>
+    <string name="current_price">Current price:</string>
+    <string name="stock_widget">Stock</string>
+    <string name="label_legend_chart">Price</string>
+    <string name="label_key_statistics">Key statistics</string>
+    <string name="label_quote_prev_close">Prev Close</string>
+    <string name="label_quote_open">Open</string>
+    <string name="label_quote_low">Low</string>
+    <string name="label_quote_high">High</string>
+
+    <!--Message-->
+    <string name="message_error_no_network">No network connectivity! Please try again when the network is available.</string>
+    <string name="message_error_no_stocks">No stocks added! Hit the floating action button to add one.</string>
+    <string name="message_stock_added_no_connectivity">Symbol %s added. Will refresh when network available.</string>
+    <string name="message_refresh_failed">Refreshing failed. Offline mode.</string>
+    <string name="message_no_connect">Network not available. Offline mode.</string>
+    <string name="message_error_fetching_stock">Error fetching stock quotes</string>
+    <string name="message_symbol_not_found">Symbol not found</string>
+
+    <!--Descriptions-->
+    <string name="description_fab">Add new Stock</string>
+    <string name="description_chart_data_1_month">Chart data 1 month</string>
+    <string name="description_chart_data_6_month">Chart data 6 month</string>
+    <string name="description_chart_data_1_year">Chart data 1 year</string>
+    <string name="description_chart_data_5_year">Chart data 5 year</string>
+    <string name="description_chart_data_max">Chart data max</string>
+    <string name="message_input_symbol">Please input symbol</string>
+    <string name="description_open_detail">Open detail</string>
+    <string name="description_stock_widget">Stock widget</string>
+
+    <!--Button names-->
+    <string name="radio_1m">1m</string>
+    <string name="radio_6m">6m</string>
+    <string name="radio_1y">1y</string>
+    <string name="radio_5y">5y</string>
+    <string name="radio_max">max</string>
+    <string name="button_setting">Setting</string>
+</resources>
